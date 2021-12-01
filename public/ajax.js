@@ -1,13 +1,26 @@
 $(document).ready(function(){
-    $('#formCorreo').on('submit', function(event){
-        event.preventDefault();
+    $('#formCorreo').on('submit', function(e){
+        e.preventDefault()
+        let nombre = document.querySelector("#nombre").value
+        let email = document.querySelector("#email").value
+        let texto = document.querySelector("#mensaje").value
         $.ajax({
-            url: "/mail",
             method:"post",
+            url: "/email",
             contentType: "application/json",
-            success: function(res){
-                $("#respuesta").html("Listo")
+            data:JSON.stringify({'nombre': nombre,
+            'email': email, 'texto': texto}),
+            success: function(respuesta){
+                if(respuesta == 'Email sent'){
+                    let respuestaAbajo = document.querySelector("#respuesta")
+                    respuestaAbajo.innerHTML = "Mensaje Enviado"
+                } else {
+                    let respuesta = document.querySelector("#respuesta")
+                    respuesta.innerHTML = "No se ha podido enviar el mensaje"
+                }
+                
             }
         })
     })
 })
+

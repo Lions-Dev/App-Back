@@ -14,9 +14,13 @@ $(document).ready(function(){
                 if(respuesta == 'Email sent'){
                     let respuestaAbajo = document.querySelector("#respuesta")
                     respuestaAbajo.innerHTML = "Mensaje Enviado"
+                    setTimeout(function()
+                    { respuestaAbajo.innerHTML = "" }, 5000);
                 } else {
                     let respuesta = document.querySelector("#respuesta")
                     respuesta.innerHTML = "No se ha podido enviar el mensaje"
+                    setTimeout(function()
+                    { respuestaAbajo.innerHTML = "" }, 5000);
                 }
                 
             }

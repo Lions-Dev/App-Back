@@ -392,6 +392,10 @@ padding-bottom: 5rem;
         font-size: 0.9rem;
         padding-left: 1rem;
     }
+    #p-pie{
+        font-size: 0.4rem;
+    }
+
 }
 @media screen and (max-width:339px){
     li{

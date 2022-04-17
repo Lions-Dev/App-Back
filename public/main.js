@@ -93,7 +93,7 @@ window.onload = () => {
             aVisit.href = "https://programacion-web-echeverria.github.io/programacion-web/";
         }
         if (counter == 1) {
-            aVisit.href = "https://cintiabadcosmiatria.online";
+            aVisit.href = "https://programacion-web-echeverria.github.io/cosmiatria/";
         }
         if (counter == 2) {
             aVisit.href = "https://carrito-app.herokuapp.com/";
@@ -105,7 +105,7 @@ window.onload = () => {
             aVisit.href = "https://programacion-web-echeverria.github.io/programacion-web/";
         }
         else if (counter == 5) {
-            aVisit.href = "https://cintiabadcosmiatria.online";
+            aVisit.href = "https://programacion-web-echeverria.github.io/cosmiatria/";
         }
 
 

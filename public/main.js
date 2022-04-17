@@ -90,22 +90,22 @@ window.onload = () => {
     const aVisit = document.querySelector("#a-visit");
     aVisit.addEventListener("click", () => {
         if (counter == 0) {
-            aVisit.href = "https://programacion-web-echeverria.github.io/programacion-web/";
+            aVisit.href = "https://Dev-Lions.github.io/programacion-web/";
         }
         if (counter == 1) {
-            aVisit.href = "https://programacion-web-echeverria.github.io/cosmiatria/";
+            aVisit.href = "https://Dev-Lions.github.io/cosmiatria/";
         }
         if (counter == 2) {
             aVisit.href = "https://carrito-app.herokuapp.com/";
         }
         if (counter == 3) {
-            aVisit.href = "https://programacion-web-echeverria.github.io/LaCampestre/";
+            aVisit.href = "https://Dev-Lions.github.io/LaCampestre/";
         }
         if (counter == 4) {
-            aVisit.href = "https://programacion-web-echeverria.github.io/programacion-web/";
+            aVisit.href = "https://Dev-Lions.github.io/programacion-web/";
         }
         else if (counter == 5) {
-            aVisit.href = "https://programacion-web-echeverria.github.io/cosmiatria/";
+            aVisit.href = "https://Dev-Lions.github.io/cosmiatria/";
         }
 
 

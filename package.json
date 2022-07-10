@@ -5,13 +5,14 @@
   "main": "app.js",
   "dependencies": {
     "cors": "^2.8.5",
-    "ejs": "^3.1.6",
+    "ejs": "^3.1.8",
     "express": "^4.17.1",
-    "node-fetch": "^3.1.0",
-    "nodemailer": "^6.7.1",
-    "nodemon": "^2.0.15"
+    "node-fetch": "^3.2.6",
+    "nodemailer": "^6.7.7"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  },
   "scripts": {
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"

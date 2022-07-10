@@ -15,7 +15,7 @@ $(document).ready(function(){
                     let respuestaAbajo = document.querySelector("#respuesta")
                     respuestaAbajo.innerHTML = "Mensaje Enviado"
                     setTimeout(function()
-                    { respuestaAbajo.innerHTML = "" }, 5000);
+                    { respuestaAbajo.innerHTML = "" }, 9000);
                 } else {
                     let respuesta = document.querySelector("#respuesta")
                     respuesta.innerHTML = "No se ha podido enviar el mensaje"

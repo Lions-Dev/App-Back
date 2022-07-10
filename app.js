@@ -21,7 +21,7 @@ app.post('/email',  function (req, res) {
     service: 'gmail',
     auth: {
       user: 'echeverriadesarrollador@gmail.com',
-      pass: '@Echeverriadesarrollador'
+      pass: 'wappysaoczloiszi'
     }
   });
   const mailOptions = {
@@ -33,6 +33,7 @@ app.post('/email',  function (req, res) {
    transporter.sendMail(mailOptions, function (error, info) {
     if (error) {
       console.log(error);
+      console.log(info)
     } else {
       console.log('Email sent' + info.response);
       res.send('Email sent');

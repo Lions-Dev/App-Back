@@ -3,6 +3,8 @@ const app = express();
 const nodemailer = require('nodemailer');
 var cors = require('cors')
 
+require('dotenv').config()
+
 app.set("views engine", "ejs")
 
 app.use(express.urlencoded({ extended: false }))
@@ -20,15 +22,15 @@ app.post('/email',  function (req, res) {
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'echeverriadesarrollador@gmail.com',
-      pass: 'wappysaoczloiszi'
+      user: process.env.USER,
+      pass: process.env.PASS
     }
   });
   const mailOptions = {
     from: email,
-    to: 'leonelandresecheverria@gmail.com',
+    to: process.env.TO,
     subject: 'Sending Email using Node.js',
-    text: 'Mensaje de: ' + nombre + 'Email: ' + email + '\b Mensaje: ' + texto
+    text: 'Mensaje de: ' + nombre + '- Email: ' + email + '\b - Mensaje: ' + texto
   };
    transporter.sendMail(mailOptions, function (error, info) {
     if (error) {

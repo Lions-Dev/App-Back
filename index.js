@@ -5,16 +5,14 @@ var cors = require('cors')
 
 require('dotenv').config()
 
-app.set("views engine", "ejs")
 
 app.use(express.urlencoded({ extended: false }))
 app.use(cors())
 app.use(express.json());
-app.use(express.static("public"))
 
 
 app.get('/', function (req, res) {
-  res.render('index.ejs');
+  res.send('app');
 });
 
 app.post('/email',  function (req, res) {
